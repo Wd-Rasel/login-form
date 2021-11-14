@@ -1,0 +1,115 @@
+/* ===========================================
+============Log_In form design here===========
+=============================================*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+ul li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+form > h2 {
+  color: red;
+  font-family: verdana;
+  text-align: center;
+  font-weight: 700;
+}
+
+#main_part {
+  background-image: url(https://i.pinimg.com/originals/f2/59/86/f25986f83d29f263ebd06dd09a346e51.jpg);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  top: 100px;
+  padding: 5px;
+  background: #8a2be2;
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 #333;
+}
+.form_container:hover {
+  box-shadow: 0 2px 4px 0 #333;
+}
+
+.input_cnt {
+  display: flex;
+  margin-bottom: 10px;
+}
+.input_cnt:last-child {
+  margin-bottom: 0px;
+}
+.input_cnt > span {
+  min-width: 40px;
+  padding: 5px;
+  text-align: center;
+  background: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: red;
+}
+
+.input_cnt > input[type="text"],
+.input_cnt > input[type="password"] {
+  background: transparent;
+  outline: none;
+  width: 80%;
+  color: #fff;
+  padding: 0 5px;
+  font-size: 14px;
+  border: none;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.input_cnt > input[type="submit"] {
+  border: none;
+  border: 1px solid red;
+  border-radius: 20px;
+  outline: none;
+  width: 35%;
+  margin: 0 auto;
+  font-size: 100%;
+  padding: 8px;
+  color: #fff;
+  background: red;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.input_cnt > input[type="submit"]:hover {
+  color: white;
+  background: transparent;
+}
+
+ul li a {
+  color: black;
+  font-size: 13px;
+  cursor: pointer;
+}
+ul li a:hover {
+  text-decoration: underline blue;
+}
+
+/* ================responsive design===============  */
+
+@media screen and (max-width: 400px) {
+  .form_container {
+    width: 90%;
+  }
+}
